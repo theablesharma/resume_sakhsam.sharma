@@ -1,0 +1,214 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    color: #222;
+    background: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 40px 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 18px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+}
+
+.header-right h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.tagline {
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+.contact {
+    font-size: 13px;
+    color: #333;
+}
+
+/* ===== HORIZONTAL RULE ===== */
+hr {
+    border: none;
+    border-top: 1.5px solid #ccc;
+    margin: 18px 0;
+}
+
+/* ===== SECTION HEADINGS ===== */
+section {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #111;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+    margin: 12px 0 4px 0;
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0 4px 0;
+}
+
+/* ===== PARAGRAPHS ===== */
+p {
+    margin-bottom: 8px;
+}
+
+blockquote {
+    margin: 10px 0 10px 20px;
+    padding-left: 12px;
+    border-left: 3px solid #aaa;
+    color: #555;
+    font-style: italic;
+    font-size: 13px;
+}
+
+/* ===== LISTS ===== */
+ul {
+    margin: 4px 0 8px 20px;
+}
+
+ul li {
+    margin-bottom: 3px;
+}
+
+/* ===== JOB ENTRIES ===== */
+.job {
+    margin-bottom: 20px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.job-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111;
+}
+
+.job-date {
+    font-size: 12px;
+    color: #666;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.company {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* ===== EDUCATION ===== */
+.education-item {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ===== TABLES ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+table td {
+    padding: 6px 10px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+table td:first-child {
+    width: 220px;
+    background: #f9f9f9;
+    font-weight: 600;
+    color: #333;
+    white-space: nowrap;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+    body {
+        background: #fff;
+    }
+    .container {
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        padding: 20px;
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px 16px;
+        margin: 0;
+    }
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .job-header {
+        flex-direction: column;
+    }
+    table td:first-child {
+        width: auto;
+        white-space: normal;
+    }
+}
